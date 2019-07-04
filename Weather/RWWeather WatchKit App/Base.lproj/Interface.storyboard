@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14835.7" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14631.1"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RWWeather_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="hML-m2-SCX">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="70°" id="eB4-Db-Gso">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="28"/>
+                                </label>
+                                <group alignment="center" layout="vertical" id="H80-Rc-fre">
+                                    <items>
+                                        <label alignment="left" text="Feels like 72°" id="p81-fR-dWa">
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
+                                        <label alignment="left" text="2MPH NE" id="u22-zi-mo3">
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <imageView alignment="center" image="Cloudy" id="Mjk-kV-xMn"/>
+                        <label alignment="center" text="Cloudy" id="LDq-CO-s5e"/>
+                    </items>
+                    <connections>
+                        <outlet property="conditionsImage" destination="Mjk-kV-xMn" id="vpY-Nj-i6o"/>
+                        <outlet property="conditionsLabel" destination="LDq-CO-s5e" id="qLv-uc-eFO"/>
+                        <outlet property="feelsLikeLabel" destination="p81-fR-dWa" id="pZh-0u-Sgf"/>
+                        <outlet property="temperatureLabel" destination="eB4-Db-Gso" id="aSp-eh-56O"/>
+                        <outlet property="windSpeedLabel" destination="u22-zi-mo3" id="5FN-wy-IJh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cloudy" width="29" height="29"/>
+    </resources>
+</document>
